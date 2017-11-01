@@ -17,4 +17,13 @@ def timestamp_day( n):
         data.append(d)
     return data
 
+
+def timestamp():
+    """
+    当前时间时间戳
+    :return:
+    """
+    return int(time.time())
+
+
 print(timestamp_day(7))

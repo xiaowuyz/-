@@ -1,5 +1,7 @@
 from datetime import datetime
 from datetime import timedelta
+import calendar
+
 import time
 
 
@@ -24,3 +26,11 @@ def timestamp():
     :return:
     """
     return int(time.time())
+
+
+def timestamp_calendar():
+    t = timestamp()
+
+    print(calendar.SUNDAY)
+
+timestamp_calendar()
